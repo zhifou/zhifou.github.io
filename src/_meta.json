@@ -1,16 +1,16 @@
 [
   {
-    "text": "Guide",
+    "text": "指南",
     "link": "/guide/",
     "activeMatch": "/guide/"
   },
   {
-    "text": "文章",
+    "text": "随笔",
     "link": "/blog/",
     "activeMatch": "/blog/"
   },
   {
-    "text": "API",
-    "link": "https://rspress.dev/api/index.html"
+    "text": "Rspress",
+    "link": "https://rspress.dev/"
   }
 ]

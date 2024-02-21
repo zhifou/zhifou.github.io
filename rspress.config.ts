@@ -3,7 +3,7 @@ import { defineConfig } from "rspress/config";
 
 export default defineConfig({
     root: path.join(__dirname, "src"),
-    title: "Rspress",
+    title: "知否",
     description: "Rspack-based Static Site Generator",
     icon: "/rspress-icon.png",
     base: "/",
@@ -17,7 +17,7 @@ export default defineConfig({
             {
                 icon: "github",
                 mode: "link",
-                content: "https://github.com/web-infra-dev/rspress",
+                content: "https://github.com/zhifou",
             },
         ],
     },

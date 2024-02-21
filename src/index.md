@@ -7,7 +7,7 @@ hero:
   tagline: Rspress tagline
   actions:
     - theme: brand
-      text: Quick34444
+      text: Quick Start
       link: /guide/
     - theme: alt
       text: Github
