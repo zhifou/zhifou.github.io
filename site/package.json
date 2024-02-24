@@ -1,0 +1,32 @@
+{
+  "name": "@zhifou/rspress-blog",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "rspress dev",
+    "build": "rspress build",
+    "preview": "rspress preview"
+  },
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "dayjs": "^1.11.10",
+    "react": "^18.2.0",
+    "rspress": "1.11.2"
+  },
+  "devDependencies": {
+    "@rspress/shared": "1.11.2",
+    "@types/node": "^16",
+    "@types/react": "^18.2.37",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "eslint-plugin-mdx": "^2.2.0",
+    "eslint-plugin-react": "^7.33.2",
+    "prettier": "^3.1.0",
+    "tailwindcss": "^3.4.0",
+    "@zhifou/rspress-plugin-post-resolver": "workspace:*",
+    "@zhifou/rspress-plugin-reading-info": "workspace:*",
+    "@zhifou/rspress-theme-default": "workspace:*",
+    "@zhifou/rspress-plugin-markdown-presets": "workspace:*"
+  }
+}

@@ -1,0 +1,32 @@
+.postList {
+  .postItem {
+    background: var(--rp-home-feature-bg);
+    border: 1px solid transparent;
+    transition: all 0.3s;
+
+    &:hover {
+      background: var(--rp-home-feature-hover-bg);
+      border: 1px solid var(--rp-c-brand);
+    }
+  }
+
+  .postCategories {
+    color: var(--rp-c-text-code);
+  }
+
+  .postHeader {
+    .postTitle {
+      color: var(--rp-c-text-1);
+      transition: color 0.5s;
+      word-break: break-all;
+
+      &:hover {
+        color: var(--rp-c-brand);
+      }
+    }
+  }
+
+  .postInfo {
+    margin-top: 10px;
+  }
+}

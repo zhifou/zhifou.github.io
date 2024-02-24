@@ -1,0 +1,20 @@
+.postInfoContainer {
+  margin-bottom: 20px;
+
+  .postInfoItem {
+    padding: 0 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 10px 0 0 10px;
+    font-size: 13px;
+    line-height: 1.75rem;
+
+    .postInfoLabel {
+      display: inline-block;
+      width: 5em;
+    }
+    .postInfoContent {
+    }
+  }
+}

@@ -1,16 +1,38 @@
 {
-  "name": "rspress-doc-template",
+  "name": "zhifou",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "rspress dev",
-    "build": "rspress build",
-    "preview": "rspress preview"
+    "new": "modern new",
+    "prepare": "npm run build && husky install",
+    "build": "cross-env NX_DAEMON=false NX_REJECT_UNKNOWN_LOCAL_CACHE=0 nx run-many -t build --exclude @zhifou/rspress-blog",
+    "dev:blog": "cross-env NX_DAEMON=false NX_REJECT_UNKNOWN_LOCAL_CACHE=0 nx run @zhifou/rspress-blog:dev",
+    "build:blog": "cross-env NX_DAEMON=false NX_REJECT_UNKNOWN_LOCAL_CACHE=0 nx run @zhifou/rspress-blog:build"
   },
-  "dependencies": {
-    "rspress": "^1.11.2"
+  "workspaces": {
+    "packages": [
+      "site",
+      "packages/*"
+    ]
   },
   "devDependencies": {
-    "@types/node": "^16.18.82"
+    "@modern-js-app/eslint-config": "2.46.1",
+    "@modern-js/eslint-config": "2.46.1",
+    "@modern-js/generator-utils": "3.3.8",
+    "@modern-js/module-tools": "2.46.1",
+    "@modern-js/monorepo-tools": "2.46.1",
+    "@modern-js/plugin-tailwindcss": "^2.46.1",
+    "@modern-js/tsconfig": "2.46.1",
+    "cross-env": "^7.0.3",
+    "husky": "^8.0.0",
+    "nx": "17.0.2",
+    "prettier": "~2.8.1",
+    "rimraf": "~3.0.2",
+    "tailwindcss": "^3.4.0",
+    "typescript": "~5.0.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
