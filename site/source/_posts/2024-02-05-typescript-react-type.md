@@ -1,4 +1,11 @@
-Typescript在React中的类型应用，记录一下，方便自己查看。
+
+---
+layout: post
+title: Typescript在React中的类型应用
+date: 2024-02-25 16:00:00
+categories: [typescript]
+tags: [typescript, react]
+---
 
 ## 一、组件声明
 
