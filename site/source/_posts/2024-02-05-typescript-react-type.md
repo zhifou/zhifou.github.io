@@ -2,7 +2,7 @@
 ---
 layout: post
 title: Typescript在React中的类型应用
-date: 2024-02-25 16:00:00
+date: 2024-02-25 16:40:00
 categories: [typescript]
 tags: [typescript, react]
 ---
