@@ -75,7 +75,7 @@ export default defineConfig({
     editLink: {
       text: '📝 在 GitHub 上编辑此页',
       docRepoBaseUrl:
-        'https://github.com/zhifou/zhifou-rspress/blob/main/source/',
+        'https://github.com/zhifou/zhifou.github.io/tree/main/site/source/',
     },
     searchPlaceholderText: '搜索...',
   },
