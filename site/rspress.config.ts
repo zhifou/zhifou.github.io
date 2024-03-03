@@ -8,7 +8,7 @@ import { markdownPresetsPlugin } from '@zhifou/rspress-plugin-markdown-presets'
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
-  title: 'zhifou',
+  title: '知否知否',
   description: '知否 Blog',
   icon: '/favicon.ico',
   outDir: '../docs',
