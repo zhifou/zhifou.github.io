@@ -499,7 +499,7 @@ ffmpeg -i input.mov  -vf crop=in_w-300:in_h-200 -c:v libx264 -c:a copy -video_si
 ffmpeg -i input.mp4 -vf cropdetect -f null - 2>&1 | awk '/crop/ { print $NF }' | tail -1
 
 # HLS切片，制作m3u8格式
-ffmpeg -i input.mp4 -c:v libx264 -c:a libfdk_aac -strict -2 -f hls  out.m3u8
+ffmpeg -i input.mp4 -c copy -map 0 -f segment -segment_list playlist.m3u8 -segment_time 5 output%03d.ts
 ```
 
 ### 8.4 视频翻转
@@ -604,7 +604,7 @@ ffmpeg -i output-he.mp4 -i zhifou.png -map 1 -map 0 -c copy -disposition:0 attac
   # 直接使用Downie4下载
   
   # 优酷视频下载
-  
+  # 直接使用Downie4下载，或者找到网络请求里的mp4文件，用Downie4下载
   
   ```
 
